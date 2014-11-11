@@ -1,0 +1,42 @@
+---
+layout: page
+title: 文章标签
+---
+
+<div class="page-back">
+    <a href="/"><<返回主页</a>
+</div>
+<div class="page-tags">
+    <ul class="list-group">
+    {% for tag in site.tags %}
+        <li class="list-group-item">
+        <span class="badge">{{ tag[1].size }}</span>
+        <a href="#{{ tag[0] }}-ref" rel={{ tag[1].size }} title="标签:{{ tag[0] }}">{{ tag[0] }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+<div class="page-blank">
+{% for tag in site.tags %}
+    <div class="page-list" id="{{ tag[0] }}-ref">
+        <h1>
+        </br>
+        </h1>
+        <h3> {{ tag[0] }}</h3>
+        <ul>
+        {% for post in tag[1] %}
+            <li>
+                <span>{{ post.date | date:"%Y年%m月%d日" }} </span>
+                <a href="{{ post.url }}">{{post.title}} </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endfor %}
+</div>
+
+<div class="backto-top">
+    <a href="#h">返回页首</a>
+</div>
+
+

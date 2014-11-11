@@ -1,0 +1,44 @@
+.page-container div{
+	margin:10px 10% 10px 10%;
+	background-color: #dddddd;
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #dddddd;
+}
+div.page-footer{
+	margin-left: 10%;
+	margin-top: 10px;
+	margin-right: 10%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.page-content div{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+div.post-heading{
+	font-size: 200%;
+}
+div.post-meta{
+	float: right;
+}
+div.post-footer{
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+}
+div.page-pagination{
+	text-align: center;
+}
+
+div.back {
+	margin-left: 10%;
+}
+
+div.backto-top{
+	text-align: center;
+}
